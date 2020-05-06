@@ -18,6 +18,9 @@ function mostrar(){
     }else if(perso.value == 'Tayná'){
         img.setAttribute('src', '/images/magali.png')
         res.innerHTML = '<p><strong>Você é a magali, pois não para de comer!!</strong></p>'
+    }else if(perso.value == 'Leonardo'){
+        img.setAttribute('src', '/images/jimmy-neutron.png')
+        res.innerHTML = '<p><strong>Você é a Jimmy Neutron, pois você é desenrolado dms mano!!</strong></p>'
     }else{
         res.innerHTML = '<p><strong>Digite o seu nome com a primeira letra Maiúscula!!</strong></p>'
     }
