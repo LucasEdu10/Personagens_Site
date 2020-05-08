@@ -15,19 +15,15 @@ function mostrar(){
             if(mudar == 0){
                 personagem.innerHTML = 'Perola!!'
                 img.innerHTML = "<img src='" + imagens_steven[mudar] + "'>"
-                //break
             }else if(mudar == 1){
                 personagem.innerHTML = 'Garnet!!'
                 img.innerHTML = "<img src='" + imagens_steven[mudar] + "'>"
-                //break
             }else if(mudar == 2){
                 personagem.innerHTML = 'Steven!!'
                 img.innerHTML = "<img src='" + imagens_steven[mudar] + "'>"
-                //break
             }else if(mudar == 3){
                 personagem.innerHTML = 'Ametista!!'
                 img.innerHTML = "<img src='" + imagens_steven[mudar] + "'>"
-                //break
             }
             break
         }else if(nome.value === nomesLista[i] && tipo_perso.value == 3){
