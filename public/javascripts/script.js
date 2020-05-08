@@ -1,29 +1,49 @@
 function mostrar(){
-    var perso = window.document.getElementsByTagName('input')[0]
-    var img = document.createElement('img')
+    var nomesLista = ["Lucas","Wilder","Leonardo","Luan", "George", "Ismael", "Junior", "Tayná", "Victor", "Eduardo", "Maria", "Eduarda", "Duda"]
+    var nome = window.document.getElementById('txtNome')
     var res = window.document.querySelector('div#resultado')
-    img.setAttribute('id', 'imagem')
+    var personagem = window.document.querySelector('div#nomePerso')
+    var imagens_steven = ['/images/perola.jpeg', '/images/garnet.jpeg','/images/steven.jpeg','/images/amentista.jpeg']
+    var img = window.document.getElementById('img')
+    var tipo_perso = window.document.getElementById('desenho')
 
-    if(perso.value == 'Wilder'){
-        img.setAttribute('src','/images/perola.jpeg')
-        res.innerHTML = '<p><strong>Você é a Perola, pois é delicada e astuta como ela!!</strong></p>'
-    }else if(perso.value == 'George'){
-        img.setAttribute('src','/images/garnet.jpeg')
-        res.innerHTML = '<p><strong>Você é a Garnet, pois você é calmo e estóico!!</strong></p>'
-    }else if(perso.value == 'Luan'){
-        res.innerHTML = '<p><strong>Desculpe não foi possivel encontrar um personagem para você</strong></p>'
-    }else if(perso.value == 'Lucas'){
-        img.setAttribute('src','/images/steven.jpeg')
-        res.innerHTML = '<p><strong>Você é o Steven, pois você é otimista, amigável e extrovertido!!</strong></p>'
-    }else if(perso.value == 'Tayná'){
-        img.setAttribute('src', '/images/magali.png')
-        res.innerHTML = '<p><strong>Você é a magali, pois não para de comer!!</strong></p>'
-    }else if(perso.value == 'Leonardo'){
-        img.setAttribute('src', '/images/jimmy-neutron.png')
-        res.innerHTML = '<p><strong>Você é a Jimmy Neutron, pois você é desenrolado dms mano!!</strong></p>'
-    }else{
-        res.innerHTML = '<p><strong>Digite o seu nome com a primeira letra Maiúscula!!</strong></p>'
+    for(var i = 0; i < nomesLista.length; i++){
+        if(nome.value === nomesLista[i] && tipo_perso.value == 1){
+            res.innerHTML = `${nome.value} você é...`
+            var mudar = Math.floor(Math.random() * imagens_steven.length)
+            console.log(mudar)
+            if(mudar == 0){
+                personagem.innerHTML = 'Perola!!'
+                img.innerHTML = "<img src='" + imagens_steven[mudar] + "'>"
+                //break
+            }else if(mudar == 1){
+                personagem.innerHTML = 'Garnet!!'
+                img.innerHTML = "<img src='" + imagens_steven[mudar] + "'>"
+                //break
+            }else if(mudar == 2){
+                personagem.innerHTML = 'Steven!!'
+                img.innerHTML = "<img src='" + imagens_steven[mudar] + "'>"
+                //break
+            }else if(mudar == 3){
+                personagem.innerHTML = 'Ametista!!'
+                img.innerHTML = "<img src='" + imagens_steven[mudar] + "'>"
+                //break
+            }
+            break
+        }else if(nome.value === nomesLista[i] && tipo_perso.value == 3){
+            res.innerHTML = '<p><strong>Paz entre os mundos Wubba Lubba Dub Dub</strong></p>'
+            img.innerHTML = "<p><img src='/images/paz_Rick_and_Morty.gif'></p>"
+            break
+        
+        }else if(nome.value === ""){
+            img.innerHTML = ''
+            personagem.innerHTML = ''
+            res.innerHTML = '<p><strong>Digite o seu nome!!</strong></p>'
+        }else{
+            personagem.innerHTML = ''
+            res.innerHTML = '<p><strong>Desculpe mas não foi possivel encontrar seu personagem ;-(</strong></p>'
+            img.innerHTML = "<img src='/images/Tristeza.gif'>"
+        }
     }
-    perso.value = ''
-    res.appendChild(img)
-}///home/lucas/Projetos/Estudos/Personagens_Site/public/images/amentista.jpeg
+    nome.value = ''
+}

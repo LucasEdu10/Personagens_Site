@@ -1,5 +1,5 @@
 body{
-    background: rgb(121, 121, 226);
+    background: rgb(52, 105, 218);
     font: normal 15pt Arial;
 }
 section{
@@ -9,7 +9,7 @@ section{
     width: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px rgb(65, 65, 65);
-    color:  rgb(121, 121, 226);
+    color:  rgb(52, 105, 218);
 }
 footer{
     color: white;
@@ -19,11 +19,31 @@ footer{
 header{
     color: white;
     text-align: center;
+    font-family: cursive;
 
 }
 input#txtNome{
+    width: 120px;
+    margin-left: 7.5px;
+    color: rgb(52, 105, 218);
+}
+input#txtPersonagem{
     width: 100px;
 }
 div#resultado{
+    text-align: center;
+}
+select{
+    border-radius: 10px;
+}
+input#btnVerificar{
+    border-radius: 10px;
+    color: rgb(253, 253, 253);
+    background-color:rgb(52, 105, 218);
+}
+div#img{
+    text-align: center;
+}
+div#nomePerso{
     text-align: center;
 }

@@ -11,14 +11,22 @@
         <h1>Gerador de Personagem</h1>
     </header>
     <section>
-        <div id="nome">
-            Digite o seu nome: <input type="text" name="txtNome" id="txtNome">
-            <input type="button" value="Verificar" onclick="mostrar()">
+        <div id="informacoes">
+            <p>Digite o seu nome: <input type="text" name="txtNome" id="txtNome"></p>
+            <p>Escolha o desenho: <select name="desenho" id="desenho">
+                                        <option value="1">Steven Universe</option>
+                                        <option value="2">Pokemon</option>
+                                        <option value="3">Rick and Morty</option>
+            </select></p>
+            <!--<input type="button" id="btnVerificar" value="Verificar" onclick="mostrar()"-->
+            <input type="button" id="btnVerificar" value="Verificar" onclick="mostrar()">
+            <!--<input type="text" name="txtPersonagem" id="txtPersonagem"-->
         </div>
         <div id="resultado">
             <p>Preencha o seu nome para ver o resultado</p>
         </div>
-
+        <div id="nomePerso"></div>
+        <div id="img"></div>
     </section>
     <footer>
         <p>&copy;Lucas Carvalho</p>
