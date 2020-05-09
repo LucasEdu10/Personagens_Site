@@ -15,6 +15,7 @@ footer{
     color: white;
     text-align: center;
     font-style: italic;
+    /*margin-top: 150px;*/
 }
 header{
     color: white;
@@ -27,9 +28,6 @@ input#txtNome{
     margin-left: 7.5px;
     color: rgb(52, 105, 218);
 }
-input#txtPersonagem{
-    width: 100px;
-}
 div#resultado{
     text-align: center;
 }
@@ -40,10 +38,25 @@ input#btnVerificar{
     border-radius: 10px;
     color: rgb(253, 253, 253);
     background-color:rgb(52, 105, 218);
+    margin-left: 130px;
+    padding: 5px;
+    font-size: 15px;
+    margin-top: auto;
 }
 div#img{
     text-align: center;
 }
 div#nomePerso{
+    text-align: center;
+}
+div#sugestoes{
+    position:fixed;
+    z-index:999; 
+    left:1250px; 
+    top:5px;
+    
+    border:1px dashed #CCC;
+    padding:2px;
+    color: white;
     text-align: center;
 }

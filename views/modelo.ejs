@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gera Personagem</title>
     <link rel="stylesheet" href="/stylesheets/estilo.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 </head>
 <body>
     <header>
@@ -13,14 +14,12 @@
     <section>
         <div id="informacoes">
             <p>Digite o seu nome: <input type="text" name="txtNome" id="txtNome"></p>
-            <p>Escolha o desenho: <select name="desenho" id="desenho">
-                                        <option value="1">Steven Universe</option>
-                                        <option value="2">Pokemon</option>
-                                        <option value="3">Rick and Morty</option>
-            </select></p>
-            <!--<input type="button" id="btnVerificar" value="Verificar" onclick="mostrar()"-->
-            <input type="button" id="btnVerificar" value="Verificar" onclick="mostrar()">
-            <!--<input type="text" name="txtPersonagem" id="txtPersonagem"-->
+            Escolha o desenho: <select name="desenho" id="desenho">
+                <option value="1">Steven Universe</option>
+                <option value="2">Pokemon</option>
+                <option value="3">Rick and Morty</option>
+                <input type="button" id="btnVerificar" value="Verificar" onclick="mostrar()">
+            </select>
         </div>
         <div id="resultado">
             <p>Preencha o seu nome para ver o resultado</p>
@@ -28,9 +27,12 @@
         <div id="nomePerso"></div>
         <div id="img"></div>
     </section>
-    <footer>
-        <p>&copy;Lucas Carvalho</p>
+    <footer id="area">
+        <p>&copy; LLC</p>
     </footer>
+    <div id="sugestoes">
+        <p>Caso o desenho de sua preferencia não constar aqui,<br>por favor nós avise!!</p>
+    </div>
     <script src="/javascripts/script.js"></script>
 </body>
 </html>
