@@ -11,8 +11,10 @@
     <header>
         <h1>Gerador de Personagem</h1>
     </header>
+    <div class="container">
     <section>
-        <div id="informacoes" class="container">
+        
+        <div id="informacoes" class="one-third column">
             <p>Digite o seu nome: <input type="text" name="txtNome" id="txtNome"></p>
             Escolha o desenho: <select name="desenho" id="desenho">
                 <option value="1">Steven Universe</option>
@@ -21,17 +23,18 @@
                 <input type="button" id="btnVerificar" value="Verificar" onclick="mostrar()">
             </select>
         </div>
-        <div id="resultado class="container"">
+        <div id="resultado" class="one-third column">
             <p>Preencha o seu nome para ver o resultado</p>
         </div>
-        <div id="nomePerso" class="container"></div>
-        <div id="img" class="container"></div>
+        <div id="nomePerso" class="one-third column"></div>
+        <div id="img" class="one-third column"></div>
     </section>
-    <footer id="area" class="container">
+    <footer id="area" class="one-third column">
         <p>&copy; LLC</p>
     </footer>
-    <div id="sugestoes" class="container">
+    <div id="sugestoes" class="one-third column">
         <p>Caso o desenho de sua preferencia não constar aqui,<br>por favor nós avise!!</p>
+    </div>
     </div>
     <script src="/javascripts/script.js"></script>
 </body>
