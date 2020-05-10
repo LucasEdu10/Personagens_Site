@@ -3,9 +3,6 @@
         padding: 15px;
         width: 500px;
     }
-    input#btnVerificar{
-        margin-left: 130px;
-    }
 }
 @media(max-width: 800px){
     body{
@@ -15,9 +12,6 @@
     section{
         width: initial;
         padding: 15px;
-    }
-    input#btnVerificar{
-        margin-left: auto;
     }
 }
 
@@ -61,6 +55,7 @@ input#btnVerificar{
     padding: 5px;
     font-size: 15px;
     margin-top: auto;
+    margin-left: auto;
 }
 div#img{
     text-align: center;
