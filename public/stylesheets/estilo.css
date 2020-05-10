@@ -19,7 +19,8 @@
         margin: auto;
     }
     section{
-        width: min-content;
+        position: relative;
+        width: initial;
         margin: 0 auto;background: rgb(231, 221, 221);
         border-radius: 10px;
         padding: 15px;
@@ -27,19 +28,8 @@
         color:  rgb(52, 105, 218);
     }
     input#btnVerificar{
-        margin-left: 10px;
-    }
-    /*
-    header{
-        width: 100%;
-        margin: auto;
         margin-left: auto;
     }
-    footer{
-        width: 100%;
-        margin: auto;
-        margin-left: auto;
-    }*/
 }
 
 body{
@@ -51,7 +41,6 @@ footer{
     color: white;
     text-align: center;
     font-style: italic;
-    /*margin-top: 150px;*/
 }
 header{
     color: white;
