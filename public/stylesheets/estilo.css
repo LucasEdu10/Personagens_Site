@@ -1,16 +1,52 @@
+@media(max-width: 1000px){
+    section{
+        background: rgb(231, 221, 221);
+        border-radius: 10px;
+        padding: 15px;
+        width: 500px;
+        margin: auto;
+        box-shadow: 5px 5px 10px rgb(65, 65, 65);
+        color:  rgb(52, 105, 218);
+    }
+    input#btnVerificar{
+        margin-left: 130px;
+    }
+}
+@media(max-width: 800px){
+    body{
+        position: relative;
+        width: 100%;
+        margin: auto;
+    }
+    section{
+        width: min-content;
+        margin: 0 auto;background: rgb(231, 221, 221);
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 5px 5px 10px rgb(65, 65, 65);
+        color:  rgb(52, 105, 218);
+    }
+    input#btnVerificar{
+        margin-left: 10px;
+    }
+    /*
+    header{
+        width: 100%;
+        margin: auto;
+        margin-left: auto;
+    }
+    footer{
+        width: 100%;
+        margin: auto;
+        margin-left: auto;
+    }*/
+}
+
 body{
     background: rgb(52, 105, 218);
     font: normal 15pt Arial;
 }
-section{
-    background: rgb(231, 221, 221);
-    border-radius: 10px;
-    padding: 15px;
-    width: 500px;
-    margin: auto;
-    box-shadow: 5px 5px 10px rgb(65, 65, 65);
-    color:  rgb(52, 105, 218);
-}
+
 footer{
     color: white;
     text-align: center;
@@ -38,7 +74,7 @@ input#btnVerificar{
     border-radius: 10px;
     color: rgb(253, 253, 253);
     background-color:rgb(52, 105, 218);
-    margin-left: 130px;
+    /*margin-left: 130px;*/
     padding: 5px;
     font-size: 15px;
     margin-top: auto;
