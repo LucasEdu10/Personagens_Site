@@ -16,6 +16,19 @@
     }
 }
 
+@media(max-width: 1800px){
+    section{
+        padding: 15px;
+        width: 500px;
+    }
+}
+@media(max-width: 1900px){
+    section{
+        padding: 15px;
+        width: 500px;
+    }
+}
+
 body{
     background: rgb(52, 105, 218);
     font: normal 15pt Arial;
