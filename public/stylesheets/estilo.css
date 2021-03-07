@@ -10,8 +10,9 @@
         margin: auto;
     }
     section{
-        width: initial;
+        width: 306px;
         padding: 15px;
+        text-align: center;
     }
 }
 
@@ -20,8 +21,8 @@ body{
     font: normal 15pt Arial;
 }
 section{
-    padding: 15px;
-    width: 500px;
+    /* padding: 15px;
+    width: 500px; */
     margin: auto;
     background: rgb(231, 221, 221);
     border-radius: 10px;

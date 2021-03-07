@@ -28,7 +28,7 @@ function mostrar(){
     }else if(nome.value && tipo_perso.value == 4){
         var mudar = Math.floor(Math.random() * imagens_turmaMonica.length)
         console.log(mudar)
-        if(nome.value == 'Tayná'){
+        if(nome.value == 'Bruna'){
             res.innerHTML = `<strong>${nome.value}</strong> você é a Magali... come que só a peste tu menina!!`
             img.innerHTML = "<img src='"+imagens_turmaMonica[0]+"'>"
         }else{
