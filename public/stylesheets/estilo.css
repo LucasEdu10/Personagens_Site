@@ -61,6 +61,7 @@ input#txtNome{
 }
 div#resultado{
     text-align: center;
+    padding: 10px;
 }
 select{
     border-radius: 10px;

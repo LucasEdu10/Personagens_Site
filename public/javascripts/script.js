@@ -5,6 +5,7 @@ function mostrar(){
     var imagens_steven = ['/images/StevenUniverse/perola.jpeg','/images/StevenUniverse/garnet.jpeg','/images/StevenUniverse/steven.jpeg','/images/StevenUniverse/amentista.jpeg']
     var imagens_turmaMonica = ['/images/TurmadaMonica/magali.png','/images/TurmadaMonica/Cascao.png','/images/TurmadaMonica/Cebolinha.png','/images/TurmadaMonica/monica.png']
     var imagens_adventure = ['/images/AdventureTime/Fiinnn.png','/images/AdventureTime/Jaakk.png','/images/AdventureTime/beemo.png','/images/AdventureTime/Rei_Gelado.png']
+    var imagens_pokemon = ['/images/Pokemon/snorlax.gif']
     var img = window.document.getElementById('img')
     var tipo_perso = window.document.getElementById('desenho')
 
@@ -25,6 +26,16 @@ function mostrar(){
             res.innerHTML += ' a Ametista!!'
             img.innerHTML = "<img src='" + imagens_steven[mudar] + "'>"
         }
+    
+    }else if(nome.value && tipo_perso.value == 2){
+        res.innerHTML = `<strong>${nome.value}</strong> você é...`
+        // var mudar = Math.floor(Math.random() * imagens_pokemon.length)
+        var mudar = 0
+        if(mudar == 0){
+            res.innerHTML += ' Snorlax, só faz dormir hein!? haha'
+            img.innerHTML = "<img src='" + imagens_pokemon[mudar] + "'>"
+        }
+    
     }else if(nome.value && tipo_perso.value == 4){
         var mudar = Math.floor(Math.random() * imagens_turmaMonica.length)
         console.log(mudar)
