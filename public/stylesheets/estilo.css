@@ -21,8 +21,8 @@ body{
     font: normal 15pt Arial;
 }
 section{
-    /* padding: 15px;
-    width: 500px; */
+    padding: 15px;
+    width: 400px;
     margin: auto;
     background: rgb(231, 221, 221);
     border-radius: 10px;
