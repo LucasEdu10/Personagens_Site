@@ -21,6 +21,9 @@
         padding: 15px;
         width: 500px;
     }
+    img{
+        width: 300px;
+    }
 }
 
 @media(max-width: 1000px){
